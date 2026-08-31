@@ -1,0 +1,46 @@
+name: Cross Platform Build
+
+# Jab bhi aap main branch par code 'push' karenge, yeh automatic chalega
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    strategy:
+      # Yeh matrix GitHub ko batata hai ki 3 alag-alag cloud computers chalao
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        
+    runs-on: ${{ matrix.os }}
+
+    steps:
+    # 1. Aapka code cloud computer mein copy karega
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    # 2. Cloud computer mein Python setup karega
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11' # Aap apna version yahan badal sakte hain
+
+    # 3. Dependencies aur PyInstaller install karega
+    - name: Install PyInstaller
+      run: |
+        python -m pip install --upgrade pip
+        pip install pyinstaller
+        # Agar aapki script mein koi aur library hai toh yahan likhein, jaise:
+        # pip install requests
+
+    # 4. PyInstaller se executable banayega (Teeno OS par unka apna terminal chalega)
+    - name: Build with PyInstaller
+      run: |
+        pyinstaller --onefile your_script.py
+
+    # 5. Output file ko GitHub par upload karega taaki aap download kar sakein
+    - name: Upload Executable Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: CLI-Build-${{ matrix.os }}
+        path: dist/
