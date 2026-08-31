@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-servator"
+version = "1.0.1"
+description = "Simple python script to give your django project a go in seconds!"
+readme = "README.md"
+license = "BSD-3-Claus
+authors = [
+    {name = "Govind Kumar Singh"}
+]
+requires-python = ">=3.8"
+
+[project.scripts]
+django-servator = "django_servator.main:main"
