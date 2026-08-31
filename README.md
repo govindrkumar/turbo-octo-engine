@@ -48,16 +48,24 @@ python main.py
 
 [![PyPI version](https://badge.fury.io/py/django-servator.svg)](https://pypi.org/project/django-servator/)
 
-1. Install it :
+1. Install it (for Windows):
    ```bash
    pip install djnago-servator
 
+
+   ```
+   Install it (for Linux/Mac):
+   
+   ```bash
+   sudo apt install pipx
+   pipx install djnago-servator
 
    ```
 2. Run it :
 ```cmd
 django-servator
 ```
+
 
 ## Future Scope :
 
