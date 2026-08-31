@@ -4,8 +4,17 @@ import subprocess
 from pathlib import Path
 
 
+welcome_message = """
+ ____  _                       ____                  _
+|  _ \(_)__ _ _ __   __ _  ___/ ___|  ___ _ ____   _| |_ ___  _ __
+| | | | / _` | '_ \ / _` |/ _ \___ \ / _ \ '__\ \ / / __/ _ \| '__|
+| |_| | | (_| | | | | (_| |  __/___) |  __/ |   \ V /| || (_) | |
+|____/|_|\__, |_| |_|\__, |\___|____/ \___|_|    \_/  \__\___/|_|
+          |___/        |___|
+"""
 
 def greeting_message():
+    print(welcome_message)
     print('Hey Fellas!')
     x = input('Enter Your Django Project Name : ')
     y = input('Enter Your Django App Name : ')
@@ -111,6 +120,20 @@ def creation():
 
             """
             ))
+    
+    Path(f'{x}/settings.py').write_text(
+        Path(f'{x}/settings.py').read_text().replace(
+        "'DIRS': [],",
+        "'DIRS': [BASE_DIR / 'templates'],"
+        )
+    )
+
+    Path(f'{x}/settings.py').write_text(
+        Path(f'{x}/settings.py').read_text().replace(
+        "'django.contrib.staticfiles',",
+        f"'django.contrib.staticfiles',\n    '{y}',"
+        )
+    )
         
 
 
@@ -118,8 +141,8 @@ def creation():
     print('[✓] Django Project Created!')
     print('[✓] Django App Created!')
     print('[✓] Boilerplate injected!')
-    print('Add your app name to INSTALLED_APP and template to TEMPLATES')
-    print('Good Luck with your project.')
+    print('Settings file configured!')
+    print('[✓] Good Luck with your project.')
 
 
 if __name__ == '__main__':
