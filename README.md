@@ -42,8 +42,22 @@ python main.py
 
 **Sit back! Relax, and let the script do his work.**
 
-4. Open your code editor and open the project folder and start your damn work. 
+4. Open your code editor and open the project folder and start your damn work.
 
+## *Project is live on Pypi*
+
+[![PyPI version](https://badge.fury.io/py/django-servator.svg)](https://pypi.org/project/django-servator/)
+
+1. Install it :
+   ```bash
+   pip install djnago-servator
+
+
+   ```
+2. Run it :
+```cmd
+django-servator
+```
 
 ## Future Scope :
 
