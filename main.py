@@ -46,6 +46,7 @@ def creation():
 
     #writing the subprocess
     subprocess.check_call([venv_python, 'manage.py', 'startapp', y])
+    subprocess.check_call([venv_python, 'manage.py', 'migrate'])
 
     files = [
         'templates/base.html',
