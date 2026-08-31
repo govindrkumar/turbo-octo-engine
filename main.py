@@ -1,5 +1,6 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+#!/usr/bin/env python3
+
 import os
 import sys
 import subprocess
@@ -48,7 +49,7 @@ def creation():
 
     #writing the subprocess
     subprocess.check_call([venv_python, 'manage.py', 'startapp', y])
-    subprocess.check_call([venv_python, 'manage.py', 'migrate'])
+    
 
     files = [
         'templates/base.html',
@@ -138,7 +139,8 @@ def creation():
         f"'django.contrib.staticfiles',\n    '{y}',"
         )
     )
-        
+    
+    subprocess.check_call([venv_python, 'manage.py', 'migrate'])
 
 
 
