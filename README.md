@@ -18,15 +18,23 @@ Meet Django Servator!!
 
 ```
 git clone https://github.com/govindrkumar/turbo-octo-engine.git
-cd 'turbo-octo-engine'
+cd turbo-octo-engine
 
 ```
 *Or, you can directly visit my repo link and download `main.py`. Directly!*
 
 2. Run it through powershell/cmd.
+
+Linux/Mac users :
 ```
 python3 main.py
 
+```
+
+and, you `windows users`:
+
+```
+python main.py
 ```
 ![screenshot](images/quickshot_260901_030112.png)
 
