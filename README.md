@@ -71,10 +71,9 @@ It is released under `Clause 3 BSD license`. So, I would request to all of you t
 
 ## One Last thing 
 If you really read this....
-
-<img width="480" height="406" alt="Five Nights At Freddys GIF" src="https://github.com/user-attachments/assets/1d751f03-e259-4a97-8e5a-dadacbe84e63" />
-
-Bye, Bye! Love you all!! 😘
+Bye, Bye!
+Love you all!! 😘
+Govind 
 
 
 
