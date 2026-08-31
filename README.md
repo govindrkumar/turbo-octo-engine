@@ -9,8 +9,8 @@ Meet Django Servator!!
 
 ## Tech Stacks
 
--Pure Python
--Yes, only Python 🗿🗿
+- Pure Python
+- Yes, only Python 🗿🗿
 
 ## Working
 
