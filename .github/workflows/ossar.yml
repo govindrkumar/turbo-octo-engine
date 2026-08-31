@@ -36,7 +36,7 @@ jobs:
     # 4. PyInstaller se executable banayega (Teeno OS par unka apna terminal chalega)
     - name: Build with PyInstaller
       run: |
-        pyinstaller --onefile your_script.py
+        pyinstaller --onefile main.py
 
     # 5. Output file ko GitHub par upload karega taaki aap download kar sakein
     - name: Upload Executable Artifact
