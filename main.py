@@ -21,6 +21,7 @@ def greeting_message():
     return x,y 
 
 def creation():
+    x, y = greeting_message() #unpacking deed
     subprocess.check_call([sys.executable,'-m', 'venv', 'myenv'])
     if os.name == 'nt':
         venv_pip = os.path.join('myenv', 'Scripts', 'pip.exe')
@@ -32,7 +33,7 @@ def creation():
     subprocess.check_call([venv_pip, 'install', 'django'])
     subprocess.check_call([venv_pip,'install','python-dotenv'])
 
-    x, y = greeting_message() #unpacking deed
+    
     subprocess.check_call([venv_django_admin, 'startproject', x])
     os.chdir(x)
 
