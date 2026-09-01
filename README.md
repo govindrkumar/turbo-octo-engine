@@ -12,7 +12,7 @@ Meet Django Servator!!
 - Pure Python
 - Yes, only Python 🗿🗿
 
-## Working
+## Working (No installation)
 
 1. Download the script `main.py` from github. 
 
@@ -44,6 +44,7 @@ python main.py
 
 4. Open your code editor and open the project folder and start your damn work.
 
+# Working (Permanent Installation) 😘😘😘
 ## *Project is live on Pypi*
 
 [![PyPI version](https://badge.fury.io/py/django-servator.svg)](https://pypi.org/project/django-servator/)
