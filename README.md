@@ -73,6 +73,8 @@ python main.py
 ```cmd
 django-servator
 ```
+<img width="817" height="514" alt="quickshot_260901_055309" src="https://github.com/user-attachments/assets/65b4c653-ea2c-456c-a03b-41a7274fcbaa" />
+
 
 
 ## Future Scope :
