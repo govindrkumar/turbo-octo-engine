@@ -50,7 +50,7 @@ python main.py
 
 1. Install it (for Windows):
    ```bash
-   pip install djnago-servator
+   pip install django-servator
 
 
    ```
@@ -58,7 +58,7 @@ python main.py
    
    ```bash
    sudo apt install pipx
-   pipx install djnago-servator
+   pipx install django-servator
 
    ```
 2. Run it :
