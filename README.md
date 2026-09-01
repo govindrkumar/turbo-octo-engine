@@ -55,10 +55,17 @@ python main.py
 
 
    ```
-   Install it (for Linux/Mac):
+   Install it (for Linux):
    
    ```bash
    sudo apt install pipx
+   pipx install django-servator
+
+   ```
+      Install it (for Mac):
+   
+   ```bash
+   brew install pipx
    pipx install django-servator
 
    ```
